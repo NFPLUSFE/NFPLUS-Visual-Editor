@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #408ef5;
+  &:hover {
+    color: #6bb0ff;
+  }
+}
+
+.app {
+  height: 100vh;
+}
+
+input {
+  display: inline-block;
+  width: 90%;
+  height: 40px;
+  outline: none;
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0 15px;
+  background-color: #fff;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  color: #606266;
+  text-align: start;
+  &:hover,
+  &:focus {
+    border: 1px solid #409eff;
+  }
+}

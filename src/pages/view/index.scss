@@ -1,0 +1,70 @@
+.viewMain {
+  background-color: #fff;
+  min-height: 100vh;
+  position: relative;
+  .empty-tips {
+    display: flex;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 24px;
+    background: #fff;
+
+    img {
+      width: 180px;
+      height: 180px;
+    }
+    a {
+      margin-top: 25px;
+    }
+  }
+  .container {
+    width: 100% !important;
+    height: 100% !important;
+    .viewItem,
+    .active {
+      position: relative;
+      cursor: pointer;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: 1px dashed transparent;
+        box-sizing: border-box;
+        pointer-events: none;
+      }
+    }
+
+    .viewItem {
+      &:after {
+        margin: 8px;
+        border: 1px dashed rgba(0,0,0,.85);
+        border-radius: 4px;
+        font-size: 16px;
+        // border-color: rgb(26, 135, 230);
+      }
+      &:hover {
+        &:after {
+          border: 2px dashed #909399;
+        }
+      }
+    }
+    .active {
+      &:after {
+        border: 2px dashed #F56C6C;
+      }
+      &:hover {
+        &:after {
+          border: 2px dashed #F56C6C;
+        }
+      }
+    }
+  }
+}

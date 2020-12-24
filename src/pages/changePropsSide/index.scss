@@ -1,0 +1,48 @@
+.changePropsWrap {
+  padding: 0;
+  flex: 1;
+
+  .changePropsTitle {
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 32px;
+    h3 {
+      margin: 24px 24px 24px 0;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  .changePropsCont {
+    .changePropsItem {
+      margin-top: 6px;
+
+      .propsTypeWrap {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      .changePropsItemKey {
+        margin: 0 10px 0 10px;
+        height: 40px;
+        line-height: 40px;
+      }
+      .propsTypeArrayAdd {
+        width: 100%;
+        margin-top: 10px;
+      }
+      .propsTypeArrayItemWrap {
+        position: relative;
+        margin: 16px 10px 0 10px;
+        border-top: #f56c6c;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+      }
+    }
+  }
+}

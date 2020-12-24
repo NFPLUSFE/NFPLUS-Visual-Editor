@@ -1,0 +1,80 @@
+.componentsSide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  .sideHeader {
+    height: 30px;
+    h3 {
+      // margin: 24px 32px;
+      margin: 24px 24px 24px 32px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .compsMeau {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    min-width: 450px;
+    .cardItem {
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+      max-height: 200px;
+      min-width: 100px;
+      height: 130px;
+      margin: 24px 24px 0 24px;
+      animation: scale-down-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
+      .cardImage {
+        height: 100%;
+        width: 100%;
+        z-index: 5;
+      }
+      .cardTitle {
+        span {
+          display: inline-block;
+          position: absolute;
+          z-index: 10;
+          background-color: rgba(0, 0, 0, 0.65);
+          color: white;
+          font-weight: 340;
+          font-size: 14px;
+          width: 100%;
+          bottom: 0px;
+          padding: 5px 10px;
+        }
+      }
+
+      &:hover {
+        animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      }
+    }
+    .cardItem:last-child{
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.scale-up-center {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes scale-down-center {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

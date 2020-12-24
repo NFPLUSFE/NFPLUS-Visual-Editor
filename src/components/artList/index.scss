@@ -1,0 +1,21 @@
+.artListWrap {
+  .artListItem {
+    padding: 8px;
+    border-bottom: 1px solid transparent;
+    display: flex;
+    // 最后一个子元素，底部位置零
+    &:last-child {
+      border-bottom: 0;
+    }
+    .artListItemTitle {
+      font-size: 1rem;
+      color: #333;
+      font-weight: 400;
+      line-height: 28px;
+    }
+    .artListItemDate {
+      font-size: 0.7rem;
+      line-height: 24px;
+    }
+  }
+}
